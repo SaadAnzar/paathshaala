@@ -2,25 +2,17 @@ import Link from "next/link";
 import { SignOutButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import {
-  ArrowRight,
   Bookmark,
-  Candy,
   CreditCard,
-  Github,
   Grape,
-  Home,
   LayoutDashboard,
-  LifeBuoy,
   LogIn,
   LogOut,
-  Save,
   University,
-  User,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
