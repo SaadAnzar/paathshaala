@@ -1,9 +1,21 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(["/dashboard(.*)"]);
+const isProtectedRoute = createRouteMatcher([
+  "/tools",
+  "/saved",
+  "/billing",
+  "/lesson-plan-generator",
+  "/activity-generator",
+  "/worksheet-generator",
+  "/concept-simplifier",
+  "/feedback-generator",
+]);
 
 export default clerkMiddleware((auth, req) => {
-  if (isProtectedRoute(req)) auth().protect();
+  if (isProtectedRoute(req))
+    auth().protect({
+      unauthenticatedUrl: `${process.env.WEBSITE_URL}/sign-in`,
+    });
 });
 
 export const config = {

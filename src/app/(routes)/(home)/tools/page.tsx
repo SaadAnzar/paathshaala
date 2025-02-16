@@ -24,16 +24,16 @@ const tools = [
     link: "/lesson-plan-generator",
   },
   {
+    title: "Worksheet Generator",
+    description:
+      "Generates questions for teachers to use in assessments and quizzes.",
+    link: "/worksheet-generator",
+  },
+  {
     title: "Activity Generator",
     description:
       "Generates engaging and interactive activities for teachers to use in their classrooms.",
     link: "/activity-generator",
-  },
-  {
-    title: "Feedback Generator",
-    description:
-      "Provides personalised feedback to students on their performance and assessments.",
-    link: "/feedback-generator",
   },
   {
     title: "Concept Simplifier",
@@ -42,10 +42,10 @@ const tools = [
     link: "/concept-simplifier",
   },
   {
-    title: "Worksheet Generator",
+    title: "Feedback Generator",
     description:
-      "Generates questions for teachers to use in assessments and quizzes.",
-    link: "/worksheet-generator",
+      "Provides personalised feedback to students on their performance and assessments.",
+    link: "/feedback-generator",
   },
 ];
 

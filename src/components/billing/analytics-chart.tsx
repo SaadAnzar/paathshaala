@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AnalyticsChart({ data }: { data: any }) {
   return (
-    <Card className="relative h-full min-h-[200px] rounded-xl px-6 text-black">
+    <Card className="min-h-[200px]">
       <CardHeader className="flex justify-center pb-0">
         <div className="flex justify-center">
           <CardTitle className="flex justify-center gap-4 text-3xl font-bold tracking-tight">
@@ -16,7 +16,7 @@ export default function AnalyticsChart({ data }: { data: any }) {
       </CardHeader>
       <CardContent>
         <div className="mt-3 px-4">
-          <div className="flex h-64 gap-2 text-lg font-bold">
+          <div className="flex h-64 gap-2 text-xl font-bold">
             <ResponsivePie
               data={data}
               margin={{ top: 30, right: 60, bottom: 30, left: 0 }}

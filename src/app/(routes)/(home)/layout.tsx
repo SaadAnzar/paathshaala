@@ -6,7 +6,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col space-y-6 px-6 pb-8 pt-4">
+    <div className="flex flex-col space-y-4 px-6 pb-8 pt-2">
       <DashboardNav />
       {children}
     </div>

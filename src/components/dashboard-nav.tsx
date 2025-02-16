@@ -10,12 +10,12 @@ export default function DashboardNav() {
 
   return (
     <div className="space-y-2">
-      <h1 className="text-2xl font-bold sm:text-4xl">Dashboard</h1>
-      <div className="bg-primary inline-flex h-12 items-center space-x-3 rounded-lg p-1.5">
+      {/* <h1 className="text-2xl font-bold sm:text-4xl">Dashboard</h1> */}
+      <div className="bg-primary inline-flex h-11 items-center space-x-3 rounded-lg px-[5px]">
         <Link
-          href="/dashboard"
+          href="/tools"
           className={cn(
-            pathname === "/dashboard"
+            pathname === "/tools"
               ? "bg-primary-foreground pointer-events-none"
               : "text-primary-foreground hover:opacity-80",
             "rounded-md px-4 py-1 text-base/relaxed font-semibold"

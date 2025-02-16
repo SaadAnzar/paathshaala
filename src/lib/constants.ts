@@ -1,8 +1,5 @@
 // Grades
 export type Grades =
-  | "Nursery"
-  | "KG1"
-  | "KG2"
   | "1"
   | "2"
   | "3"
@@ -152,7 +149,7 @@ const resources: Resources[] = ["Internet", "Chart Paper", "Computer"];
 // Values
 export type Values = "Honesty" | "Punctuality" | "Politeness" | "Truthfulness";
 
-const focus_values: Values[] = [
+const values: Values[] = [
   "Honesty",
   "Punctuality",
   "Politeness",
@@ -184,7 +181,7 @@ const levels: Levels[] = ["Easy", "Medium", "Hard", "Mix"];
 
 export type Simplify = "Example" | "Explanation" | "Activity";
 
-const simplify: Simplify[] = ["Example", "Explanation", "Activity"];
+const simplifies: Simplify[] = ["Example", "Explanation", "Activity"];
 
 export {
   grades,
@@ -192,8 +189,8 @@ export {
   verbs,
   natures,
   resources,
-  focus_values,
+  values,
   formats,
   levels,
-  simplify,
+  simplifies,
 };

@@ -1,4 +1,5 @@
 import AnalyticsChart from "@/components/billing/analytics-chart";
+import Pricing from "@/components/billing/pricing";
 
 export default function Subscription() {
   const data = [
@@ -15,9 +16,9 @@ export default function Subscription() {
   ];
 
   return (
-    <div>
-      <h1>Billing</h1>
+    <div className="space-y-6">
       <AnalyticsChart data={data} />
+      <Pricing />
     </div>
   );
 }

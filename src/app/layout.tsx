@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +28,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={cn("font-sans", fontSans.variable)}>{children}</body>
+        <body className={cn("font-sans", fontSans.variable)}>
+          {children}
+          <Toaster richColors closeButton />
+        </body>
       </html>
     </ClerkProvider>
   );

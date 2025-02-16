@@ -1,7 +1,5 @@
-export default function AcitivyGenerator() {
-  return (
-    <div>
-      <h1>Activity Generator</h1>
-    </div>
-  );
+import ActivityGeneratorPage from "@/components/tools/activity-generator";
+
+export default function ActivityGenerator() {
+  return <ActivityGeneratorPage />;
 }

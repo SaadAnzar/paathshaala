@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-starter-template",
+  "name": "paathshaala",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,8 +12,9 @@
     "typecheck": "tsc --noEmit",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "db:studio": "pnpm drizzle-kit studio",
-    "db:push": "pnpm drizzle-kit push:pg"
+    "migrations:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.6",
@@ -38,6 +39,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-select": "^5.8.0",
+    "sonner": "^1.7.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
