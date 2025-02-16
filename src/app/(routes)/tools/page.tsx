@@ -21,31 +21,31 @@ const tools = [
     title: "Lesson Plan Generator",
     description:
       "Generates lesson plans, assignment and slide content for teachers based on input criteria and curriculum standards.",
-    link: "/lesson-plan-generator",
+    link: "/tools/lesson-plan-generator",
   },
   {
     title: "Worksheet Generator",
     description:
       "Generates questions for teachers to use in assessments and quizzes.",
-    link: "/worksheet-generator",
+    link: "/tools/worksheet-generator",
   },
   {
     title: "Activity Generator",
     description:
       "Generates engaging and interactive activities for teachers to use in their classrooms.",
-    link: "/activity-generator",
+    link: "/tools/activity-generator",
   },
   {
     title: "Concept Simplifier",
     description:
       "Simplifies complex concepts and presents them in a more understandable manner for students.",
-    link: "/concept-simplifier",
+    link: "/tools/concept-simplifier",
   },
   {
     title: "Feedback Generator",
     description:
       "Provides personalised feedback to students on their performance and assessments.",
-    link: "/feedback-generator",
+    link: "/tools/feedback-generator",
   },
 ];
 

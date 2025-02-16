@@ -1,4 +1,5 @@
-import Navbar from "@/components/Navbar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/sidebar/app-sidebar";
 
 export default function RoutesLayout({
   children,
@@ -6,9 +7,11 @@ export default function RoutesLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <Navbar />
-      <div className="mt-14">{children}</div>
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <SidebarInset>
+        <div className="flex flex-1 flex-col gap-4 p-6">{children}</div>
+      </SidebarInset>
+    </SidebarProvider>
   );
 }

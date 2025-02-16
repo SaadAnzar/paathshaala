@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     default: "Paathshaala",
     template: `%s | Paathshaala`,
   },
-  description: "Paathshaala is an AI platform for educational purposes.",
+  description:
+    "Paathshaala is a digital school which leverages AI to make education easy.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

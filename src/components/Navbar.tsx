@@ -5,12 +5,10 @@ import {
   Bookmark,
   Cherry,
   CreditCard,
-  Grape,
   LayoutDashboard,
   LogIn,
   LogOut,
   School,
-  University,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
