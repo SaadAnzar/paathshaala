@@ -1,16 +1,24 @@
 import Link from "next/link";
-import { currentUser } from "@clerk/nextjs/server";
-import { ArrowRight } from "lucide-react";
+import { LogIn, School } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
-import Navbar from "@/components/Navbar";
 
-export default async function IndexPage() {
-  const user = await currentUser();
-
+export default function IndexPage() {
   return (
     <>
-      <Navbar />
+      <header className="fixed inset-x-0 top-0 z-[100] flex h-16 items-center justify-between px-4 py-2 backdrop-blur-lg sm:px-8">
+        <div className="inline-flex items-center justify-center">
+          <School className="mr-2 size-5 text-violet-600" strokeWidth={2.5} />
+          <h1 className="bg-gradient-to-r from-violet-900 to-violet-400 bg-clip-text text-2xl font-bold tracking-tighter text-transparent">
+            PaathShaala
+          </h1>
+        </div>
+        <Link href="/sign-up" className={buttonVariants()}>
+          Get Started
+          <LogIn className="ml-2 size-4" />
+        </Link>
+      </header>
+      {/* <Navbar /> */}
       <section className="size-full py-12 md:py-24 lg:py-32 xl:py-48">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6">
@@ -25,16 +33,10 @@ export default async function IndexPage() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
-                {user ? (
-                  <Link href="/tools" className={buttonVariants()}>
-                    Let&apos;s continue!
-                  </Link>
-                ) : (
-                  <Link href="/sign-up" className={buttonVariants()}>
-                    Get Started
-                    <ArrowRight className="ml-2 size-4" />
-                  </Link>
-                )}
+                <Link href="/sign-in" className={buttonVariants()}>
+                  Welcome Back!
+                  {/* <ArrowRight className="ml-2 size-4" /> */}
+                </Link>
               </div>
             </div>
           </div>

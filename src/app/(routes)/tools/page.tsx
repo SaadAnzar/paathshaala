@@ -49,7 +49,7 @@ const tools = [
   },
 ];
 
-export default function Dashboard() {
+export default function ToolsDashboard() {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
       {tools.map((tool, index) => (

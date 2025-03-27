@@ -1,5 +1,5 @@
-import ActivityGeneratorPage from "@/components/tools/activity-generator";
+import Generator from "@/components/tools/generator";
 
 export default function ActivityGenerator() {
-  return <ActivityGeneratorPage />;
+  return <Generator tool="activity-generator" />;
 }

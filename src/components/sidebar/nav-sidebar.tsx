@@ -21,7 +21,6 @@ interface NavLinkProps {
   title: string;
   href: string;
   icon: LucideIcon;
-  isActive?: boolean;
   items?: {
     title: string;
     href: string;
@@ -34,7 +33,6 @@ const navLinks: NavLinkProps[] = [
     title: "Tools",
     href: "/tools",
     icon: Paintbrush,
-    isActive: true,
     items: [
       {
         title: "Lesson Plan Generator",

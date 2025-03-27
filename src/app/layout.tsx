@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: `%s | Paathshaala`,
   },
   description:
-    "Paathshaala is a digital school which leverages AI to make education easy.",
+    "Paathshaala: Revolutionizing education with AI, one lesson at a time.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

@@ -1,5 +1,5 @@
-import ConceptSimplifierPage from "@/components/tools/concept-simplifier";
+import Generator from "@/components/tools/generator";
 
 export default function ConceptSimplifier() {
-  return <ConceptSimplifierPage />;
+  return <Generator tool="concept-simplifier" />;
 }

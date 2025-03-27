@@ -141,11 +141,6 @@ export type Nature = "Group" | "Individual";
 
 const natures: Nature[] = ["Group", "Individual"];
 
-// Resources
-export type Resources = "Internet" | "Chart Paper" | "Computer";
-
-const resources: Resources[] = ["Internet", "Chart Paper", "Computer"];
-
 // Values
 export type Values = "Honesty" | "Punctuality" | "Politeness" | "Truthfulness";
 
@@ -188,7 +183,6 @@ export {
   subjects,
   verbs,
   natures,
-  resources,
   values,
   formats,
   levels,

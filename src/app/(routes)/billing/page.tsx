@@ -11,7 +11,7 @@ export default function Subscription() {
     {
       id: "Credits Remaining",
       label: "Credits Remaining",
-      value: 30,
+      value: 20,
     },
   ];
 

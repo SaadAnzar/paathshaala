@@ -1,5 +1,5 @@
-import FeedbackGeneratorPage from "@/components/tools/feedback-generator";
+import Generator from "@/components/tools/generator";
 
 export default function FeedbackGenerator() {
-  return <FeedbackGeneratorPage />;
+  return <Generator tool="feedback-generator" />;
 }

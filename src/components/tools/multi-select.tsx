@@ -57,7 +57,7 @@ export default function VerbMultiSelect({
 }: MultiSelectProps) {
   return (
     <Select
-      className="remove-input-txt-border mt-3 text-left"
+      className="remove-input-txt-border mt-3 text-left text-sm font-medium"
       closeMenuOnSelect={false}
       placeholder="Select a verb"
       components={animatedComponents}
@@ -88,7 +88,7 @@ export function FormatMultiSelect({
 }: MultiSelectProps) {
   return (
     <Select
-      className="remove-input-txt-border mt-3 text-left"
+      className="remove-input-txt-border mt-3 text-left text-sm font-medium"
       closeMenuOnSelect={false}
       placeholder="Select a question format"
       components={animatedComponents}
@@ -105,35 +105,8 @@ export function FormatMultiSelect({
         colors: {
           ...theme.colors,
           primary: "#000",
-        },
-      })}
-    />
-  );
-}
-
-export function ResourcesMultiSelect({
-  selectedOptions,
-  setSelectedOptions,
-}: MultiSelectProps) {
-  return (
-    <Select
-      className="remove-input-txt-border mt-3 text-left"
-      closeMenuOnSelect={false}
-      placeholder="Select resource"
-      components={animatedComponents}
-      defaultValue={[]}
-      value={selectedOptions}
-      isMulti
-      options={resources}
-      onChange={(e: any) => {
-        setSelectedOptions(e);
-      }}
-      theme={(theme) => ({
-        ...theme,
-        borderRadius: 5,
-        colors: {
-          ...theme.colors,
-          primary: "#000",
+          primary25: "#f2f5f5",
+          primary50: "#f2f5f5",
         },
       })}
     />
